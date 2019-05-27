@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciamento de Postagens</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script src="js/jquery.validate.js"></script>
+
+</head>
+
+<body class="container">
+
+    <h1 class="text-center">Gerencimento de Postagens</h1>
+
+    <form class="form" id=form>
+
+        <div class="form-group">
+            <label for="idPost">Id</label>
+            <input type="number" min="1" step="1" id="idPost" name="idPost" class="form-control" required autofocus />
+        </div>
+
+        <div class="form-group">
+            <label for="descricao">Descrição</label>
+            <input type="text" id="titlePost" name="descricao" class="form-control" required />
+        </div>
+
+        <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" id="data" class="form-control" required />
+        </div>
+
+        <div class="form-inline">
+            <label for="ativo">Ativo</label>
+            <input type="checkbox" id="ativo" class="form-control" required />
+        </div>
+
+        <button class="btn btn-primary" type="submit" id="btnIncluir">Incluir</button>
+    </form>
+
+    <div class="text-center">
+        <button class="btn btn-primary text-center" type="button" id="btnApagar" >
+            Apagar
+        </button>
+    </div>
+    <label class="error error-ja-existe">Já existe um item com este ID cadastrado.</label>
+    <label class="error error-apagar">Para apagar é necessário selecionar ao menos uma postagem na lista.</label>
+    <br>
+    <br>
+
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>DESCRIÇÃO</th>
+                <th>DATA</th>
+                <th>ATIVO</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+        </tfoot>
+    </table>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

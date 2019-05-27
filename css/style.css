@@ -1,0 +1,22 @@
+tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+	background-color: lightblue;
+}
+
+.selected {
+    background-color: #A0A0A0;
+}
+
+.error {
+    color: #AC0000;
+    margin-top: 5px;
+    display: block;
+}
+
+.error-apagar, .error-ja-existe {
+    display: none;
+}
+
